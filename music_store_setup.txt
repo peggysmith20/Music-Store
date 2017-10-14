@@ -1,0 +1,25 @@
+
+------------------------------------
+
+To import preexisting table
+
+
+gem 'schema_to_scaffold'
+
+bundle install
+
+rake db:schema:dump
+
+scaffold
+
+
+Copy the line it gives you and insert as command
+This creates tables for given database
+
+------------------------------------
+
+rails g controller Pages home about
+
+rake db:migrate
+
+
