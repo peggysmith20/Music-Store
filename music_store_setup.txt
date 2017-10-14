@@ -23,3 +23,10 @@ rails g controller Pages home about
 rake db:migrate
 
 
+------------------------------------
+
+bootstrap
+
+https://launchschool.com/blog/integrating-rails-and-bootstrap-part-1
+
+
