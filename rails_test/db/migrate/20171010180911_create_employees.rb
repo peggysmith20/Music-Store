@@ -6,7 +6,7 @@ class CreateEmployees < ActiveRecord::Migration[5.0]
       t.string :last_name
       t.string :job_title
       t.decimal :pay
-      t.int :phone
+      t.integer :phone
       t.string :schedule_slot
       t.string :integer
 

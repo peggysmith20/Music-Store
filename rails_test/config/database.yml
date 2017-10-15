@@ -13,9 +13,9 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root
-  password: 1234
-  host: localhost
+  username: music_group
+  password: music
+  host: 108.255.70.130
 
 development:
   <<: *default
