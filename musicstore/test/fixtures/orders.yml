@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  transaction: one
+  transaction_type: MyString
+  employee: one
+  date_time: 2017-10-24 09:34:07
+
+two:
+  transaction: two
+  transaction_type: MyString
+  employee: two
+  date_time: 2017-10-24 09:34:07
