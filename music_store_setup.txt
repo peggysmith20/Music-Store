@@ -1,0 +1,49 @@
+
+------------------------------------
+
+To import preexisting table
+
+
+gem 'schema_to_scaffold'
+
+bundle install
+
+------------------------------------
+
+set up database yml file
+
+------------------------------------
+
+rake db:schema:dump
+
+scaffold
+
+This generates:
+
+rails generate scaffold Employees employee:references first_name:string last_name:string job_title:string pay:decimal phone:string schedule_slot:integer --no-migration
+
+rails generate scaffold Products product_type:string brand:string price:decimal stock:decimal --no-migration
+
+rails generate scaffold Sales transaction:references product:references --no-migration
+
+rails generate scaffold Schedules shift:string --no-migration
+
+rails generate scaffold Orders transaction:references transaction_type:string employee:references date_time:datetime --no-migration
+
+
+Copy the lines it gives you and insert as commands
+This creates tables for given database
+
+------------------------------------
+
+rails g controller Pages home about
+
+rake db:migrate
+
+
+------------------------------------
+
+bootstrap
+
+https://launchschool.com/blog/integrating-rails-and-bootstrap-part-1
+

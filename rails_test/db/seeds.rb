@@ -1,1 +1,0 @@
-Employee.create!(employee_id: 1, first_name: 'Bob', last_name: 'Smith', job_title: 'Cashier', pay: 10.00, phone: 1, schedule_slot: 1)
