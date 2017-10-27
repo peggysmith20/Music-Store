@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :orders
+  get 'pages/employees'
+  
+  
+  
   get 'pages/home'
 
   get 'pages/about'
