@@ -6,6 +6,8 @@ class EmployeesController < ApplicationController
   def index
     @employees = Employee.all
   end
+  
+  
 
   # GET /employees/1
   # GET /employees/1.json
