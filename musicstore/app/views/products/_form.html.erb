@@ -10,7 +10,12 @@
       </ul>
     </div>
   <% end %>
-
+  
+  <div class="field">
+    <%= form.label :product_id %>
+    <%= form.text_field :product_id, id: :product_product_id %>
+  </div>
+  
   <div class="field">
     <%= form.label :product_type %>
     <%= form.text_field :product_type, id: :product_product_type %>
