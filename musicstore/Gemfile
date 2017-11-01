@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails_admin', '~> 1.2'
+#gem 'foreigner'
 
 gem 'schema_to_scaffold'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
