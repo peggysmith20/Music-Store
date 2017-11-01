@@ -12,14 +12,15 @@
 default: &default
   adapter: mysql2
   encoding: utf8
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password: redred
   socket: /tmp/mysql.sock
+  pool: 5
+  username: music_group
+  password: music
+  host: 108.255.70.130
 
 development:
   <<: *default
-  database: musicstore
+  database: music_store
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
