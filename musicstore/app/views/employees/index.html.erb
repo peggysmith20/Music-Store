@@ -21,14 +21,14 @@
   <tbody>
     <% @employees.each do |employee| %>
       <tr>
-        <td><%= employee.employee %></td>
+        <td><%= employee.employee_id %></td>
         <td><%= employee.first_name %></td>
         <td><%= employee.last_name %></td>
         <td><%= employee.job_title %></td>
         <td><%= employee.pay %></td>
         <td><%= employee.phone %></td>
-        <td><%= employee.schedule_slot %></td>
-        <td><%= link_to 'Show', employee %></td>
+        <td><%= employee.schedule_slot %></td> 
+		<td><%= link_to 'Show', employee) %></td>
         <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
         <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

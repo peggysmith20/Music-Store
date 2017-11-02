@@ -19,7 +19,7 @@
   <tbody>
     <% @orders.each do |order| %>
       <tr>
-        <td><%= order.transaction %></td>
+        <td><%= order.transaction_id %></td>
         <td><%= order.transaction_type %></td>
         <td><%= order.employee %></td>
         <td><%= order.date_time %></td>
