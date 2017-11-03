@@ -12,4 +12,14 @@
 
 ActiveRecord::Schema.define(version: 0) do
 
+  create_table "employees", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "employee_id", null: false
+    t.string "first_name"
+    t.string "last_name"
+    t.string "job_title"
+    t.decimal "pay", precision: 10
+    t.string "phone"
+    t.index ["employee_id"], name: "employee identification", unique: true
+  end
+
 end

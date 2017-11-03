@@ -6,7 +6,7 @@ class Employees < ActiveRecord::Migration[5.1]
 		t.string :last_name
 		t.string :job_title
 		t.decimal :pay
-		t.string :phone
+		t.string :phone, null: false
 	  end	  
 	  add_index "employees", ["employee_id"], name: "employee identification", unique: true, using: :btree
 =begin
